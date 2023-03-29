@@ -1,4 +1,3 @@
-const { response } = require('express');
 const request = require('request');
 const apiOptions = {
     server: 'http://localhost:3000'
@@ -7,6 +6,7 @@ const apiOptions = {
 const renderTravelList = (req, res, responseBody) => {
     let message = null;
     let pageTitle = process.env.npm_package_description +' - Travel';
+    
     if(!(responseBody instanceof Array)) {
         message = 'API lookup error';
         responseBody = [];
@@ -15,13 +15,11 @@ const renderTravelList = (req, res, responseBody) => {
             message = 'No trips eist in our database!';
         }
     }
-    res.render('travel',
-        {
+    res.render('travel', {
         title: pageTitle,
         trips: responseBody,
         message
-        }
-    );
+    });
 };
 
 /* GET travel view */
@@ -45,8 +43,6 @@ const travelList = (req, res) => {
         }
     )
 }
-
-
    
    module.exports = {
     travelList
