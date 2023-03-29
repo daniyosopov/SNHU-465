@@ -36,7 +36,7 @@ const travelList = (req, res) => {
     request(
         requestOpstions,
         (err, { statusCode }, body) => {
-            if(err){
+            if(err) {
                 console.error(err);
             }
             renderTravelList(req, res, body);
