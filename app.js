@@ -4,7 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const hbs = require('hbs');
+<<<<<<< HEAD
 require('./app_api/database/db');
+=======
+require("./app_api/database/db");
+>>>>>>> d19b5bdaefec9d03fe49169d45cdb6a5e8e42197
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
