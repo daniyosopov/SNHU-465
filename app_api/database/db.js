@@ -24,7 +24,7 @@ mongoose.connection.on('disconnected', () => {
 
 if(process.platform == 'win32'){
   const rl = readLine.createInterface({
-    intput: process.stdin,
+    input: process.stdin,
     output: process.stdout
   });
   rl.on('SIGINT', () => {
