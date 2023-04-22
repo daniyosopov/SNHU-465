@@ -1,6 +1,4 @@
-#SNHU-465
-
-
+# SNHU-465
 
 Architecture: The front-end-side application of the project was developed using Express, a node.js framework. handlebars were used to create templates and render the HTML pages. JavaScript was used for the API server controllers which handle the incoming HTTP requests and send responses back to the caller. Next, I used Angular to develop a single-page application, on this page, I developed the CRUD functions so that the admins can add, edit, and delete trips from the trip database on top of that I implemented authentication by adding a login feature.
 
